@@ -1,6 +1,6 @@
 #
 # cmv-archiver
-# https://www.github.com/01mu/cmv-archiver
+# github.com/01mu
 #
 
 import urllib2

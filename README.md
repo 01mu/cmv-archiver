@@ -1,6 +1,6 @@
 # cmv-archiver
 Get thread info, statistics, and delta info from reddit's /r/changemyview. Writes posts to a PostgreSQL database.
-## Usage `driver.py`
+## Usage
 ```python
 from cmv_archiver import CMVArchiver
 
@@ -14,7 +14,6 @@ cmv_archiver.create_table()
 cmv_archiver.update_posts()
 cmv_archiver.update_stats()
 ```
-## Output
 ```
 INSERTED: <thread title>
 UPDATED: <thread title>
