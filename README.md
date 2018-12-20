@@ -1,6 +1,7 @@
 # cmv-archiver
-Get thread info, statistics, and delta info from reddit's /r/changemyview. Writes posts to a PostgreSQL database.
+Get thread info, statistics, and delta info from reddit's /r/changemyview. Writes posts to a PostgreSQL or MySQL database.
 ## Usage
+### Write comments, threads, and statistics to database:
 ```python
 from cmv_archiver import CMVArchiver
 
@@ -27,3 +28,8 @@ STATS UPDATED: true_per 50.2
 STATS UPDATED: last_update 1540499783
 ...
 ```
+### API
+Return values from the MySQL database using PHP.
+* get_posts(`$limit`, `$order`, `$start`, `$sort`): Get threads.
+* search_posts(`$limit`, `$query`, `$start`): Return threads or comments matching query.
+* single(`$id`): Return specific thread by ID.

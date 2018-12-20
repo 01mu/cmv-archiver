@@ -24,7 +24,7 @@ class CMVArchiver:
 
     def get_common_words(self):
         ''' Get common words for tags. Soruce: github.com/dariusk/corpora '''
-        with open('common', 'r') as myfile:
+        with open('../../res/common', 'r') as myfile:
             common = json.loads(myfile.read())
         self.common_words = common['commonWords'];
 
