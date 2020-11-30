@@ -203,7 +203,7 @@ class CMVArchiver:
             (value))
 
         if not check:
-            vals = (first_update, update)
+            vals = (first_update, value)
             sql = "INSERT INTO stats (value, input) VALUES (%s, %s)"
             self.cur.execute(sql, vals)
             self.db.commit()

@@ -1,0 +1,13 @@
+Options -Indexes
+
+<Files "driver.php">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Files "cmv.php">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+
